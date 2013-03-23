@@ -1,0 +1,17 @@
+//
+// Prefix header for all source files of the 'Visual Calendar' target in the 'Visual Calendar' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+  #import "Constants.h"
+  #import <EventKitUI/EventKitUI.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif
