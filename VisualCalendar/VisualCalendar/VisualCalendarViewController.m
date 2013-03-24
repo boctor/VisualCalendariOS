@@ -11,7 +11,7 @@
 #import "CollectionViewCalendarEntryCell.h"
 #import "LineLayout.h"
 
-#define ITEM_SIZE 240.f
+#define ITEM_SIZE 160.f
 
 @interface VisualCalendarViewController ()
 @property (strong, nonatomic) EKCalendarChooser *calendarChooser;
@@ -34,6 +34,7 @@
 {
   [super viewDidLoad];
   [self setupCollectionView];
+  [self setupNowButton];
 }
 
 - (void) setupCollectionView
@@ -47,6 +48,12 @@
   self.collectionView.allowsMultipleSelection = YES;
 }
 
+- (void) setupNowButton
+{
+  [self.nowButton setBackgroundImage:[[UIImage imageNamed:@"btn.png"] stretchableImageWithLeftCapWidth:10.f topCapHeight:10.f] forState:UIControlStateNormal];
+  
+  
+}
 - (void) loadOrChooseCalendar
 {
   if (![[NSUserDefaults standardUserDefaults] objectForKey:CHOSEN_CALENDAR_IDENTIFIER_PREFS_KEY])
@@ -60,6 +67,8 @@
 
 - (void) calendarReady:(NSNotification *)notification
 {
+  AppDelegate* appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+  [appDelegate.eventStore refreshSourcesIfNecessary];
   [self loadOrChooseCalendar];
 }
 
@@ -115,6 +124,7 @@
   self.events = [appDelegate.eventStore eventsMatchingPredicate:predicate];
   [self addFreeTimeEvents];
   [self.collectionView reloadData];
+  [self showCurrentEvent];
 }
 
 #pragma mark - EKCalendarChooserDelegate
@@ -198,6 +208,8 @@
     return @"lunchdinner.png";
   if ([event.title.lowercaseString rangeOfString:@"wash"].location != NSNotFound && [event.title.lowercaseString rangeOfString:@"hand"].location != NSNotFound)
     return @"washhands.png";
+  if ([event.title.lowercaseString rangeOfString:@"free"].location != NSNotFound)
+    return @"freetime.png";
   return nil;
 }
 
@@ -226,6 +238,26 @@
     }
   }
   self.events = [NSArray arrayWithArray:newEvents];
+}
+
+- (void) showCurrentEvent
+{
+  NSDate* now = [NSDate date];
+  for (EKEvent* event in [self.events reverseObjectEnumerator])
+  {
+    NSComparisonResult startComparison = [now compare:event.startDate];
+    NSComparisonResult endComparison = [now compare:event.endDate];
+      if (startComparison == NSOrderedSame || endComparison == NSOrderedSame || (startComparison == NSOrderedDescending && endComparison == NSOrderedAscending))
+      {
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForRow:[self.events indexOfObjectIdenticalTo:event] inSection:0] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:YES];
+        break;
+      }
+  }
+}
+
+- (IBAction) showNow
+{
+  [self showCurrentEvent];
 }
 
 - (void)dealloc

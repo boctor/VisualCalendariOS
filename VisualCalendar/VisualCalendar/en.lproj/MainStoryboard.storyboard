@@ -21,18 +21,38 @@
                                     <outlet property="delegate" destination="2" id="Obl-pH-PdM"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zn-9Y-fkh">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="59" id="Nah-d8-f75"/>
+                                    <constraint firstAttribute="height" constant="30" id="O92-dB-gvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="NOW">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNow" destination="2" eventType="touchUpInside" id="YCz-VC-sQp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="0xV-mx-Yau"/>
-                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Bzh-2m-SeX"/>
-                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="gpu-OM-LBR"/>
-                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="xCZ-ti-Z9I"/>
+                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="HU4-Ns-UCz"/>
+                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Tyv-qz-JN1"/>
+                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="mQO-PO-7M8"/>
+                            <constraint firstItem="xTg-gS-iJ9" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="mwO-ob-Wmo"/>
+                            <constraint firstAttribute="trailing" secondItem="7Zn-9Y-fkh" secondAttribute="trailing" constant="8" id="v4Y-hE-y11"/>
+                            <constraint firstAttribute="bottom" secondItem="7Zn-9Y-fkh" secondAttribute="bottom" constant="11" id="zRz-1F-zKY"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2Ms-2S-8Py"/>
                     <connections>
                         <outlet property="collectionView" destination="xTg-gS-iJ9" id="gEe-pJ-YCs"/>
+                        <outlet property="nowButton" destination="7Zn-9Y-fkh" id="mKG-Pf-J9u"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -65,13 +85,12 @@
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
         </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
         <class className="VisualCalendarViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/VisualCalendarViewController.h"/>
             <relationships>
+                <relationship kind="action" name="showNow"/>
                 <relationship kind="outlet" name="collectionView" candidateClass="UICollectionView"/>
+                <relationship kind="outlet" name="nowButton" candidateClass="UIButton"/>
             </relationships>
         </class>
     </classes>

@@ -30,6 +30,12 @@
 		7F0291A316FE6F0600A4C014 /* snack.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F02918C16FE6F0600A4C014 /* snack.png */; };
 		7F0291A416FE6F0600A4C014 /* toys.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F02918D16FE6F0600A4C014 /* toys.png */; };
 		7F0291A516FE6F0600A4C014 /* washhands.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F02918E16FE6F0600A4C014 /* washhands.png */; };
+		7F0291A716FF750200A4C014 /* freetime.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291A616FF750200A4C014 /* freetime.png */; };
+		7F0291AB16FF7F3200A4C014 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291A816FF7F3200A4C014 /* Icon-72.png */; };
+		7F0291AC16FF7F3200A4C014 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291A916FF7F3200A4C014 /* icon.png */; };
+		7F0291AD16FF7F3200A4C014 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291AA16FF7F3200A4C014 /* icon@2x.png */; };
+		7F0291B016FF850A00A4C014 /* btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291AE16FF850A00A4C014 /* btn.png */; };
+		7F0291B116FF850A00A4C014 /* btn@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F0291AF16FF850A00A4C014 /* btn@2x.png */; };
 		7F0E001116FE426A00D6A1C9 /* CollectionViewCalendarEntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0E001016FE426A00D6A1C9 /* CollectionViewCalendarEntryCell.m */; };
 		7F0EFFCB16FE1CC500D6A1C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0EFFCA16FE1CC500D6A1C9 /* UIKit.framework */; };
 		7F0EFFCD16FE1CC500D6A1C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0EFFCC16FE1CC500D6A1C9 /* Foundation.framework */; };
@@ -72,9 +78,15 @@
 		7F02918C16FE6F0600A4C014 /* snack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snack.png; sourceTree = "<group>"; };
 		7F02918D16FE6F0600A4C014 /* toys.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toys.png; sourceTree = "<group>"; };
 		7F02918E16FE6F0600A4C014 /* washhands.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = washhands.png; sourceTree = "<group>"; };
+		7F0291A616FF750200A4C014 /* freetime.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = freetime.png; sourceTree = "<group>"; };
+		7F0291A816FF7F3200A4C014 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		7F0291A916FF7F3200A4C014 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		7F0291AA16FF7F3200A4C014 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		7F0291AE16FF850A00A4C014 /* btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn.png; sourceTree = "<group>"; };
+		7F0291AF16FF850A00A4C014 /* btn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn@2x.png"; sourceTree = "<group>"; };
 		7F0E000F16FE426A00D6A1C9 /* CollectionViewCalendarEntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCalendarEntryCell.h; sourceTree = "<group>"; };
 		7F0E001016FE426A00D6A1C9 /* CollectionViewCalendarEntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCalendarEntryCell.m; sourceTree = "<group>"; };
-		7F0EFFC716FE1CC500D6A1C9 /* Visual Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visual Calendar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F0EFFC716FE1CC500D6A1C9 /* Calendar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calendar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F0EFFCA16FE1CC500D6A1C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		7F0EFFCC16FE1CC500D6A1C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7F0EFFCE16FE1CC500D6A1C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +129,7 @@
 		7F02917716FE6F0600A4C014 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				7F0291A616FF750200A4C014 /* freetime.png */,
 				7F02917816FE6F0600A4C014 /* bathroom.png */,
 				7F02917916FE6F0600A4C014 /* break.png */,
 				7F02917A16FE6F0600A4C014 /* breakfast.jpg */,
@@ -156,7 +169,7 @@
 		7F0EFFC816FE1CC500D6A1C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7F0EFFC716FE1CC500D6A1C9 /* Visual Calendar.app */,
+				7F0EFFC716FE1CC500D6A1C9 /* Calendar.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,7 +201,7 @@
 				7F0EFFF216FE3A2F00D6A1C9 /* LineLayout.m */,
 				7F0EFFD116FE1CC500D6A1C9 /* Supporting Files */,
 			);
-			path = "Visual Calendar";
+			path = "VisualCalendar";
 			sourceTree = "<group>";
 		};
 		7F0EFFD116FE1CC500D6A1C9 /* Supporting Files */ = {
@@ -201,6 +214,11 @@
 				7F0EFFDC16FE1CC500D6A1C9 /* Default.png */,
 				7F0EFFDE16FE1CC500D6A1C9 /* Default@2x.png */,
 				7F0EFFE016FE1CC500D6A1C9 /* Default-568h@2x.png */,
+				7F0291A816FF7F3200A4C014 /* Icon-72.png */,
+				7F0291A916FF7F3200A4C014 /* icon.png */,
+				7F0291AA16FF7F3200A4C014 /* icon@2x.png */,
+				7F0291AE16FF850A00A4C014 /* btn.png */,
+				7F0291AF16FF850A00A4C014 /* btn@2x.png */,
 				7F02917716FE6F0600A4C014 /* images */,
 			);
 			name = "Supporting Files";
@@ -223,7 +241,7 @@
 			);
 			name = "Visual Calendar";
 			productName = "Visual Calendar";
-			productReference = 7F0EFFC716FE1CC500D6A1C9 /* Visual Calendar.app */;
+			productReference = 7F0EFFC716FE1CC500D6A1C9 /* Calendar.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -285,6 +303,12 @@
 				7F0291A316FE6F0600A4C014 /* snack.png in Resources */,
 				7F0291A416FE6F0600A4C014 /* toys.png in Resources */,
 				7F0291A516FE6F0600A4C014 /* washhands.png in Resources */,
+				7F0291A716FF750200A4C014 /* freetime.png in Resources */,
+				7F0291AB16FF7F3200A4C014 /* Icon-72.png in Resources */,
+				7F0291AC16FF7F3200A4C014 /* icon.png in Resources */,
+				7F0291AD16FF7F3200A4C014 /* icon@2x.png in Resources */,
+				7F0291B016FF850A00A4C014 /* btn.png in Resources */,
+				7F0291B116FF850A00A4C014 /* btn@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,9 +413,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Visual Calendar/Visual Calendar-Prefix.pch";
-				INFOPLIST_FILE = "Visual Calendar/Visual Calendar-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "VisualCalendar/Visual Calendar-Prefix.pch";
+				INFOPLIST_FILE = "VisualCalendar/Visual Calendar-Info.plist";
+				PRODUCT_NAME = Calendar;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,9 +424,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Visual Calendar/Visual Calendar-Prefix.pch";
-				INFOPLIST_FILE = "Visual Calendar/Visual Calendar-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "VisualCalendar/Visual Calendar-Prefix.pch";
+				INFOPLIST_FILE = "VisualCalendar/Visual Calendar-Info.plist";
+				PRODUCT_NAME = Calendar;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

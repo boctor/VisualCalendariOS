@@ -8,4 +8,6 @@
 
 @interface VisualCalendarViewController : UIViewController <EKCalendarChooserDelegate>
 @property (strong, nonatomic) IBOutlet UICollectionView* collectionView;
+@property (strong, nonatomic) IBOutlet UIButton* nowButton;
+- (IBAction) showNow;
 @end

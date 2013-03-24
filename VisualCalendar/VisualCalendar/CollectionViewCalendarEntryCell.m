@@ -33,8 +33,8 @@
 
       self.imageView = [[UIImageView alloc] initWithFrame:CGRectMake(0.0, 0.0, frame.size.width, frame.size.height)];
       self.imageView.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
-      self.imageView.layer.masksToBounds = YES;
-      self.imageView.layer.cornerRadius = 40.f;
+      // self.imageView.layer.masksToBounds = YES;
+      // self.imageView.layer.cornerRadius = 40.f;
       [self.contentView addSubview:self.imageView];
     }
     return self;
